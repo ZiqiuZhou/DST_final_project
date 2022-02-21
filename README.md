@@ -7,3 +7,4 @@ The code is based on the repository: https://github.com/pvlachas/RNN-RC-Chaos. P
 3. Two models of task03 still need to be fine-tune, especially for Lorenz-96 model
 4. not be able to find satisfying values for the power spectrum smoothing factor and
 the cutoff
+  - edd
