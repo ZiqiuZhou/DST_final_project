@@ -1,6 +1,14 @@
 \documentclass{scrarticle}
 
+\usepackage[utf8]{inputenc}
 \usepackage{xcolor}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
 
 \title{DST - Final Project}
 \author{Ziqiu Zhou (\textbf{\textcolor{red}{YOUR MATRIKELNUMBER}}), Christoph Bender (\textbf{4012810})}
@@ -9,10 +17,16 @@
 \begin{document}
 	\maketitle
 	\clearpage
-	\section{Summary LSTM}
-	
+	\section{Summary LSTM \cite{Vlachas}}
+	The invention of LSTM was motivated by the regularization of recurrent neural networks (RNNs). In addition to inputs $\bm{i}_t$, RNNs use also loops in order to include informations from previous hidden states $\bm{h}_{t'}$(where $t'<t$) in the calculation of the current state $\bm{h}_t$ at time $t$. The Elman network \cite{Elman} is for example defined by \footnote{see also \url{https://en.wikipedia.org/wiki/Recurrent_neural_network\#Elman_networks_and_Jordan_networks}}: 
+	\begin{align}
+		\bm{h}_t&=\sigma_h(\bm{W}_{hi}\cdot\bm{i}_t+\bm{W}_{hh}\cdot\bm{h_{t-1}}+b_h) \\
+		\bm{o}_t&=\sigma_o(\bm{W}_{oh}\cdot\bm{h}_t+b_o)
+	\end{align}
 	\section{Results}
+	\textcolor{red}{What do you think about the idea to shortly present the results of task 3 here, i.e. saying the sigma and the cutoff frequency and maybe some training graphics ...}
 	\subsection{Lorenz63}
-	\subsection{Lorenz63}
-
+	\subsection{Lorenz96}
+	
+	\printbibliography
 \end{document}

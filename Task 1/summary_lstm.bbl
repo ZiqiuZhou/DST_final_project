@@ -1,0 +1,123 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Elman}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d5a20a1ebd7891ecfcfd79254de20395}{%
+           family={Elman},
+           familyi={E\bibinitperiod},
+           given={Jeffrey\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{fullhash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{bibnamehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{authorbibnamehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{authornamehash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \strng{authorfullhash}{d5a20a1ebd7891ecfcfd79254de20395}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Time underlies many interesting human behaviors. Thus, the question of how to represent time in connectionist models is very important. One approach is to represent time implicitly by its effects on processing rather than explicitly (as in a spatial representation). The current report develops a proposal along these lines first described by Jordan (1986) which involves the use of recurrent links in order to provide networks with a dynamic memory. In this approach, hidden unit patterns are fed back to themselves: the internal representations which develop thus reflect task demands in the context of prior internal states. A set of simulations is reported which range from relatively simple problems (temporal version of XOR) to discovering syntactic/semantic features for words. The networks are able to learn interesting internal representations which incorporate task demands with memory demands: indeed, in this approach the notion of memory is inextricably bound up with task processing. These representations reveal a rich structure, which allows them to be highly context-dependent, while also expressing generalizations across classes of items. These representations suggest a method for representing lexical categories and the type/token distinction.}
+      \field{journaltitle}{Cognitive Science}
+      \field{number}{2}
+      \field{title}{Finding Structure in Time}
+      \field{volume}{14}
+      \field{year}{1990}
+      \field{pages}{179\bibrangedash 211}
+      \range{pages}{33}
+      \verb{doi}
+      \verb https://doi.org/10.1207/s15516709cog1402\_1
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1207/s15516709cog1402_1
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1402_1
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1402_1
+      \endverb
+    \endentry
+    \entry{Vlachas}{article}{}
+      \name{author}{5}{}{%
+        {{hash=cfd0a0dc753b39bc214b2866fdafe3c3}{%
+           family={Vlachas},
+           familyi={V\bibinitperiod},
+           given={Pantelis\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=012fc9a772132c1516a8e9bf09dd1a88}{%
+           family={Byeon},
+           familyi={B\bibinitperiod},
+           given={Wonmin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d34de4f5b0614d82adb9b8661e0ff7e9}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={Zhong\bibnamedelima Y.},
+           giveni={Z\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=370fd8e5f3e40ecf42338ab09adcecfa}{%
+           family={Sapsis},
+           familyi={S\bibinitperiod},
+           given={Themistoklis\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d0a18518b57cef85c32665e92ec3dea1}{%
+           family={Koumoutsakos},
+           familyi={K\bibinitperiod},
+           given={Petros},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3eb773d5db55123a28b1b35ccae1314}
+      \strng{fullhash}{a785e09035293c4c851845821631b6d3}
+      \strng{bibnamehash}{a3eb773d5db55123a28b1b35ccae1314}
+      \strng{authorbibnamehash}{a3eb773d5db55123a28b1b35ccae1314}
+      \strng{authornamehash}{a3eb773d5db55123a28b1b35ccae1314}
+      \strng{authorfullhash}{a785e09035293c4c851845821631b6d3}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce a data-driven forecasting method for high-dimensional chaotic systems using long short-term memory (LSTM) recurrent neural networks. The proposed LSTM neural networks perform inference of high-dimensional dynamical systems in their reduced order space and are shown to be an effective set of nonlinear approximators of their attractor. We demonstrate the forecasting performance of the LSTM and compare it with Gaussian processes (GPs) in time series obtained from the Lorenz 96 system, the Kuramoto–Sivashinsky equation and a prototype climate model. The LSTM networks outperform the GPs in short-term forecasting accuracy in all applications considered. A hybrid architecture, extending the LSTM with a mean stochastic model (MSM–LSTM), is proposed to ensure convergence to the invariant measure. This novel hybrid method is fully data-driven and extends the forecasting capabilities of LSTM networks.}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{2213}
+      \field{title}{Data-driven forecasting of high-dimensional chaotic systems with long short-term memory networks}
+      \field{volume}{474}
+      \field{year}{2018}
+      \field{pages}{20170844}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rspa.2017.0844
+      \endverb
+      \verb{eprint}
+      \verb https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.2017.0844
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2017.0844
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2017.0844
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
