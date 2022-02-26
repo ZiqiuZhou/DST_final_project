@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[outercaption]{sidecap}  
 \usepackage{caption}
 \usepackage{url}
 \usepackage{hyperref}
@@ -56,12 +57,20 @@
 		\bm{o}_t = \bm{W}_{oh}\cdot\bm{h}_t = f^w(\bm{z}_t, \bm{h}_{t-1}, \bm{C}_{t-1}) \approx F^w(\bm{z}_t, \bm{z}_{t-1}, \hdots, \bm{z}_{t-d+1}) \quad\footnotemark
 	\end{align}
 	\footnotetext{where in the following $\bm{z}_t$ is used as the input and describes the system time series.} 
-	The so-called LSTM cell-function $f^w$ can be rewritten by iterative repition as $F^w$, where $w$ includes all trainable parameters. In the last step one uses the assumption that d-time steps are sufficient to compute the current output and thus $\bm{h}_{t-d},\bm{C}_{t-d}$ can be omitted.
+	The so-called LSTM cell-function $f^w$ can be rewritten by iterative repition as $F^w$, where $w$ includes all trainable parameters. In the last step one uses the assumption that d-time steps are sufficient to compute the current output and thus $\bm{h}_{t-d},\bm{C}_{t-d}$ can be omitted. The model is data-driven, one has not to incoperate prior knowledge (like underlying equations) in the system necessarily.
 	Goal of the LSTM is to predict the state derivative $\bm{\dot{z}}_t$ using a short time memory of the $d$ previous states $\bm{z}_{t:t-d+1}$. Therefore, the loss $\mathcal{L}$ shall be minimized by searching for the best parameters $w^*$:
 	\begin{align}
 	w^* = \arg\min_w\mathcal{L}(\{\bm{z}_{1:T},\bm{\dot{z}}_{1:T}\},w)=\arg\min_w\frac{1}{T-d+1}\sum_{t=d}^T||F^w(\bm{z}_{t:t-d+1})-\bm{\dot{z}}_t||^2
 	\end{align}
+	\begin{SCfigure}
+		\includegraphics[width=9.25cm]{images/LSTM_Vlachas.jpg}
+		\captionsetup{format=plain}
+		\caption{LSTM Model\cite{Vlachas}\\Predictions are marked with red arrows, while black arrows indicate the short-term memory. The known $\bm{z}_{1:d}^{\text{true}}$ are used to predict $\bm{\dot{z}}_d^{\text{predict}}$, which can be integrated in order to get the next state $\bm{z}_{d+1}^{\text{predict}}$.}
+	\end{SCfigure}
+
+	The group of Vlachas trained the LSTM by using backpropagation. For this, a mini-batch optimization with the Adam method \cite{Adam} and an initial learning rate $\epsilon_{init}=10^{-4})$ was applied. The inizialization of the weights is based on the method of Xavier. One problem the group had to face was to fine tune the dimension of the hidden stated $d_h$. They observed that a small $d_h$ shortened the ability to fit to the time series well, but a big $d_h$ increased the risk of overfitting and the computation time.
 	
+	In the paper they compared the LSTM Model with the GPR (Gaussian process regression) and MSM (Mean Stochastic Model). Three applications (The Lorenz 96 sytem, the Kuromoto-Sivashinsky equation an a barotropic climate model) were considered in order to evaluate the predictive accuracy of the models. They showed that in all cases the LSTM outperformed the other two models, i.e. the LSTM model was able to catpure the local dynamics more efficient.
 	\section{Results}
 	\textcolor{red}{What do you think about the idea to shortly present the results of task 3 here, i.e. saying the sigma and the cutoff frequency and maybe some training graphics ...}
 	\subsection{Lorenz63}
