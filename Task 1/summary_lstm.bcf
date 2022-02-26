@@ -2184,6 +2184,8 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Vlachas</bcf:citekey>
     <bcf:citekey order="2">Elman</bcf:citekey>
+    <bcf:citekey order="3">Vlachas</bcf:citekey>
+    <bcf:citekey order="4">Vlachas</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
