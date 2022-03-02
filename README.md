@@ -5,8 +5,8 @@ The code is based on the repository: https://github.com/pvlachas/RNN-RC-Chaos. P
 1. I use LSTM as our model and the code works with the requirement of python 3.7 and tensorflow 1.14
 2. I implemented part of task 03 using two given datasets: for example, if you want to train a model on data Lorenz-63, go to the folder ./Experiments/Lorenz-63/Local and command: bash 03_RNNStatefull_LSTM.sh
 3. Two models of task03 still need to be fine-tune, especially for Lorenz-96 model
-4. not be able to find satisfying values for the power spectrum smoothing factor and
-the cutoff
+4. not deal with how to embed code for finding the power spectrum smoothing factor and
+the cutoff into the model
 
 Update Christoph:
 
