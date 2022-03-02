@@ -109,9 +109,9 @@ def computeErrors(target, prediction, std):
 	num_accurate_pred_050 = getNumberOfAccuratePredictions(rmnse, 0.5)
 	return rmse, rmnse, num_accurate_pred_005, num_accurate_pred_050, abserror
 
-def computeFrequencyError(predictions_all, truths_all, dt):
-	sp_pred, freq_pred = computeSpectrum(predictions_all, dt)
-	sp_true, freq_true = computeSpectrum(truths_all, dt)
+def computeFrequencyError(predictions_all, truths_all, dt, smoothing_sigma):
+	sp_pred, freq_pred = computeSpectrum(predictions_all, dt, smoothing_sigma)
+	sp_true, freq_true = computeSpectrum(truths_all, dt, smoothing_sigma)
 	error_freq = np.mean(np.abs(sp_pred - sp_true))
 	return freq_pred, freq_true, sp_true, sp_pred, error_freq
 
@@ -167,21 +167,19 @@ class scaler(object):
 			raise ValueError("Scaler not implemented.")
 		return input_sequence
 
-
-
-def computeSpectrum(data_all, dt):
+def computeSpectrum(data_all, dt, smoothing_sigma):
 	# Of the form [n_ics, T, n_dim]
 	spectrum_db = []
 	for data in data_all:
 		data = np.transpose(data)
 		for d in data:
-			freq, s_dbfs = dbfft(d, 1/dt)
+			freq, s_dbfs = dbfft(d, 1/dt, smoothing_sigma)
 			spectrum_db.append(s_dbfs)
 	spectrum_db = np.array(spectrum_db).mean(axis=0)
 	return spectrum_db, freq
 
 
-def dbfft(x, fs):
+def dbfft(x, fs, smoothing_sigma):
 	"""
 	Calculate spectrum in dB scale
 	Args:
@@ -205,7 +203,42 @@ def dbfft(x, fs):
 	# Convert to dBFS
 	s_dbfs = 20 * np.log10(s_mag)
 	s_dbfs = s_dbfs[0]
-	return freq, s_dbfs
+	fft_smoothed = kernel_smoothen(s_dbfs, smoothing_sigma)
+	return freq, fft_smoothed
+
+def get_average_spectrum(trajectories, fs, smoothing_sigma):
+    spectrum = []
+    for trajectory in trajectories:
+        trajectory = (trajectory - trajectory.mean()) / trajectory.std()  # normalize individual trajectories
+        freq, fft_decibel = dbfft(trajectory, fs, smoothing_sigma)
+        spectrum.append(fft_decibel)
+    spectrum = np.array(spectrum).mean(axis=0)
+    return spectrum / spectrum.sum()
+
+def kernel_smoothen(data, kernel_sigma):
+    """
+    Smoothen data with Gaussian kernel
+    @param kernel_sigma: standard deviation of gaussian, kernel_size is adapted to that
+    @return: internal data is modified but nothing returned
+    """
+    kernel = get_kernel(kernel_sigma)
+    data_final = data.copy()
+    data_conv = np.convolve(data[:], kernel)
+    pad = int(len(kernel) / 2)
+    data_final[:] = data_conv[pad:-pad]
+    data[1:] = data_final[1:]
+    return data
+
+def gauss(x, sigma=1):
+    return 1 / np.sqrt(2 * np.pi * sigma ** 2) * np.exp(-1 / 2 * (x / sigma) ** 2)
+
+def get_kernel(sigma):
+    size = sigma * 10 + 1
+    kernel = list(range(size))
+    kernel = [float(k) - int(size / 2) for k in kernel]
+    kernel = [gauss(k, sigma) for k in kernel]
+    kernel = [k / np.sum(kernel) for k in kernel]
+    return kernel
 
 def getNumberOfAccuratePredictions(nerror, tresh=0.05):
 	nerror_bool = nerror < tresh
@@ -315,69 +348,6 @@ def subsample(data, max_samples):
 			data = data[::step][:max_samples]
 	return data
 
-
-def getESNParser(parser):
-	parser.add_argument("--mode", help="train, test, all", type=str, required=True)
-	parser.add_argument("--system_name", help="system_name", type=str, required=True)
-	parser.add_argument("--write_to_log", help="write_to_log", type=int, required=True)
-	parser.add_argument("--N", help="N", type=int, required=True)
-	parser.add_argument("--N_used", help="N_used", type=int, required=True)
-	parser.add_argument("--RDIM", help="RDIM", type=int, required=True)
-	parser.add_argument("--approx_reservoir_size", help="approx_reservoir_size", type=int, required=True)
-	parser.add_argument("--degree", help="degree", type=float, required=True)
-	parser.add_argument("--radius", help="radius", type=float, required=True)
-	parser.add_argument("--sigma_input", help="sigma_input", type=float, required=True)
-	parser.add_argument("--regularization", help="regularization", type=float, required=True)
-	parser.add_argument("--dynamics_length", help="dynamics_length", type=int, required=True)
-	parser.add_argument("--iterative_prediction_length", help="iterative_prediction_length", type=int, required=True)
-	parser.add_argument("--num_test_ICS", help="num_test_ICS", type=int, required=True)
-	parser.add_argument("--scaler", help="scaler", type=str, required=True)
-	parser.add_argument("--noise_level", help="noise level per mille in the training data", type=int, default=0, required=True)
-	parser.add_argument("--display_output", help="control the verbosity level of output , default True", type=int, required=False, default=1)
-	parser.add_argument("--mem_cap", help="candidate for memory capacity calculation", type=int, required=False, default=0)
-	parser.add_argument("--mem_cap_delay", help="mem_cap_delay", type=int, required=False, default=0)
-	parser.add_argument("--learning_rate", help="learning rate for gradient descent", type=float, required=False, default=1e-6)
-	parser.add_argument("--number_of_epochs", help="number of epochs", type=int, required=False, default=10000)
-	parser.add_argument("--solver", help="solver used to learn mapping H -> Y, it can be [pinv, saga, gd]", type=str, required=False, default="pinv")
-	parser.add_argument("--reference_train_time", help="The reference train time in hours", type=float, default=24)
-	parser.add_argument("--buffer_train_time", help="The buffer train time to save the model in hours", type=float, default=0.5)
-
-	return parser
-
-def getMLPParser(parser):
-	parser.add_argument("--mode", help="train, test, all", type=str, required=True)
-	parser.add_argument("--system_name", help="system_name", type=str, required=True)
-	parser.add_argument("--write_to_log", help="write_to_log", type=int, required=True)
-	parser.add_argument("--N", help="N", type=int, required=True)
-	parser.add_argument("--N_used", help="N_used", type=int, required=True)
-	parser.add_argument("--RDIM", help="RDIM", type=int, required=True)
-	parser.add_argument("--initializer", help="initializer", type=str, required=True)
-	parser.add_argument("--mlp_num_layers", help="mlp_num_layers", type=int, required=True)
-	parser.add_argument("--mlp_size_layers", help="mlp_size_layers", type=int, required=True)
-	parser.add_argument("--mlp_activation_str", help="mlp_activation_str", type=str, required=True)
-	parser.add_argument("--prediction_length", help="prediction_length", type=int, required=True)
-	parser.add_argument("--sequence_length", help="sequence_length", type=int, required=True)
-	parser.add_argument("--scaler", help="scaler", type=str, required=True)
-	parser.add_argument("--noise_level", help="noise level per mille in the training data", type=int, default=0, required=True)
-	parser.add_argument("--learning_rate", help="learning_rate", type=float, required=True)
-	parser.add_argument("--batch_size", help="batch_size", type=int, required=True)
-	parser.add_argument("--batched_valtrain", help="batched_valtrain", type=int, required=True)
-	parser.add_argument("--overfitting_patience", help="overfitting_patience", type=int, required=True)
-	parser.add_argument("--training_min_epochs", help="training_min_epochs", type=int, required=True)
-	parser.add_argument("--max_epochs", help="max_epochs", type=int, required=True)
-	parser.add_argument("--num_rounds", help="num_rounds", type=int, required=True)
-	parser.add_argument("--regularization", help="regularization", type=float, required=True)
-	parser.add_argument("--keep_prob", help="keep_prob", type=float, required=True)
-	parser.add_argument("--train_val_ratio", help="train_val_ratio", type=float, required=True)
-	parser.add_argument("--retrain", help="retrain", type=int, required=True)
-	parser.add_argument("--subsample", help="subsample", type=int, required=True)
-	parser.add_argument("--num_test_ICS", help="num_test_ICS", type=int, required=True)
-	parser.add_argument("--iterative_prediction_length", help="iterative_prediction_length", type=int, required=True)
-	parser.add_argument("--display_output", help="control the verbosity level of output , default True", type=int, required=False, default=1)
-	return parser
-
-
-
 def getRNNStatefullParser(parser):
 	parser.add_argument("--mode", help="train, test, all", type=str, required=True)
 	parser.add_argument("--system_name", help="system_name", type=str, required=True)
@@ -418,86 +388,9 @@ def getRNNStatefullParser(parser):
 	parser.add_argument("--trackHiddenState", help="trackHiddenState", type=int, required=False)
 	parser.add_argument("--reference_train_time", help="The reference train time in hours", type=float, default=24)
 	parser.add_argument("--buffer_train_time", help="The buffer train time to save the model in hours", type=float, default=0.5)
+	parser.add_argument("--smoothing_sigma", help="smoothes the spectra with a Gaussian kernel with width sigma", type=int, default=5)
+	parser.add_argument("--frequency_cutoff", help="excludes all frequencies above the threshhold frequency", type=int, default=5000)
 	return parser
-
-def getMLPParallelParser(parser):
-	parser = getMLPParser(parser)
-	parser.add_argument("--num_parallel_groups", help="groups in the output for parallelization in the spatiotemporal domain. must be divisor of the input dimension", type=int, required=True)
-	parser.add_argument("--parallel_group_interaction_length", help="The interaction length of each group. 0-rdim/2", type=int, required=True)
-	return parser
-
-def getESNParallelParser(parser):
-	parser = getESNParser(parser)
-	parser.add_argument("--num_parallel_groups", help="groups in the output for parallelization in the spatiotemporal domain. must be divisor of the input dimension", type=int, required=True)
-	parser.add_argument("--parallel_group_interaction_length", help="The interaction length of each group. 0-rdim/2", type=int, required=True)
-	return parser
-
-
-def getRNNStatefullParallelParser(parser):
-	parser = getRNNStatefullParser(parser)
-	parser.add_argument("--num_parallel_groups", help="groups in the output for parallelization in the spatiotemporal domain. must be divisor of the input dimension", type=int, required=True)
-	parser.add_argument("--parallel_group_interaction_length", help="The interaction length of each group. 0-rdim/2", type=int, required=True)
-	return parser
-
-
-# UTILITIES FOR PARALLEL MODELS
-def createParallelTrainingData(model):
-	# GROUP NUMMER = WORKER ID
-	group_num = model.parallel_group_num
-	group_start = group_num * model.parallel_group_size
-	group_end = group_start + model.parallel_group_size
-	pgil = model.parallel_group_interaction_length
-	training_path_group = reformatParallelGroupDataPath(model, model.main_train_data_path, group_num, pgil)
-	testing_path_group = reformatParallelGroupDataPath(model, model.main_test_data_path, group_num, pgil)
-	if(not os.path.isfile(training_path_group)):
-		print("## Generating data for group {:d}-{:d} ##".format(group_start, group_end))
-		with open(model.main_train_data_path, "rb") as file:
-			data = pickle.load(file)
-			train_sequence = data["train_input_sequence"][:, :model.RDIM]
-			dt = data["dt"]
-			del data
-		train_sequence_group = createParallelGroupTrainingSequence(group_num, group_start, group_end, pgil, train_sequence)
-		data = {"train_input_sequence":train_sequence_group, "dt":dt}
-		with open(training_path_group, "wb") as file:
-			# Pickle the "data" dictionary using the highest protocol available.
-			pickle.dump(data, file, pickle.HIGHEST_PROTOCOL)
-			del data
-	else:
-		print("Training data file already exist.")
-
-	if(not os.path.isfile(testing_path_group)):
-		print("## Generating data for group {:d}-{:d} ##".format(group_start, group_end))
-		with open(model.main_test_data_path, "rb") as file:
-			data = pickle.load(file)
-			test_sequence = data["test_input_sequence"][:, :model.RDIM]
-			testing_ic_indexes = data["testing_ic_indexes"]
-			del data
-		test_sequence_group = createParallelGroupTrainingSequence(group_num, group_start, group_end, pgil, test_sequence)
-		data = {"test_input_sequence":test_sequence_group, "testing_ic_indexes":testing_ic_indexes, "dt":dt}
-		with open(testing_path_group, "wb") as file:
-			# Pickle the "data" dictionary using the highest protocol available.
-			pickle.dump(data, file, pickle.HIGHEST_PROTOCOL)
-			del data
-	else:
-		print("Testing data file already exist.")
-
-	return training_path_group, testing_path_group
-
-def createParallelGroupTrainingSequence(gn, gs, ge, ll, sequence):
-	sequence = np.transpose(sequence)
-	sequence_group = []
-	sequence = Circ(sequence)
-	print("Indexes considered {:d}-{:d}".format(gs-ll, ge+ll))
-	for i in range(gs-ll, ge+ll):
-		sequence_group.append(sequence[i])
-	sequence_group = np.transpose(sequence_group)
-	return sequence_group
-
-def reformatParallelGroupDataPath(model, path, gn, ll):
-	# Last 7 string objects are .pickle
-	last = 7
-	path_ = path[:-last] + "_G{:d}-from-{:d}_GS{:d}_GIL{:d}".format(gn, model.num_parallel_groups, model.parallel_group_size, ll) + path[-last:]
-	return path_
 
 class Circ(list):
 	def __getitem__(self, idx):

@@ -173,7 +173,13 @@ def plotSpectrum(model, sp_true, sp_pred, freq_true, freq_pred, set_name):
     plt.savefig(fig_path)
     plt.close()
 
-
+def plotSpectrumComparison(model, sp_true, sp_pred, set_name):
+    fig_path = model.saving_path + model.fig_dir + model.model_name + "/spectrum_comparison_{:}.png".format(set_name)
+    plt.plot(sp_true / sp_true.sum(), label='ground truth')
+    plt.plot(sp_pred / sp_pred.sum(), label='generated')
+    plt.legend(loc="lower right")
+    plt.savefig(fig_path)
+    plt.close()
 
 
 

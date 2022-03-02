@@ -151,6 +151,10 @@ class rnn_statefull(object):
         self.num_rounds = params['num_rounds']
         self.learning_rate =  params['learning_rate']
         self.reference_train_time = 60*60*(params["reference_train_time"]-params["buffer_train_time"])
+
+        self.smoothing_sigma = params['smoothing_sigma']
+        self.frequency_cutoff = params['frequency_cutoff']
+
         print("Reference train time {:} seconds / {:} minutes / {:} hours.".format(self.reference_train_time, self.reference_train_time/60, self.reference_train_time/60/60))
 
         if self.initializer not in ['xavier', 'normal']:
@@ -691,9 +695,23 @@ class rnn_statefull(object):
         num_accurate_pred_050_avg = np.mean(num_accurate_pred_050_all)
         print("AVG NUMBER OF ACCURATE 0.5 PREDICTIONS: {:}".format(num_accurate_pred_050_avg))
 
-        freq_pred, freq_true, sp_true, sp_pred, error_freq = computeFrequencyError(predictions_all, truths_all, dt)
+        freq_pred, freq_true, sp_true, sp_pred, error_freq = computeFrequencyError(predictions_all, truths_all, dt, self.smoothing_sigma)
 
         print("FREQUENCY ERROR: {:}".format(error_freq))
+
+        dim_x = predictions_all.shape[2]
+        pse_corrs_per_dim = []
+        for dim in range(dim_x):
+            spectrum_true = get_average_spectrum(truths_all[:, :, dim], 1/dt, self.smoothing_sigma)
+            spectrum_gen = get_average_spectrum(predictions_all[:, :, dim], 1/dt, self.smoothing_sigma)
+            spectrum_true = spectrum_true[:self.frequency_cutoff]
+            spectrum_gen = spectrum_gen[:self.frequency_cutoff]
+            plotSpectrumComparison(self, spectrum_true, spectrum_gen, set_name)
+            pse_corr_per_dim = np.corrcoef(x=spectrum_gen, y=spectrum_true)[0, 1]
+            pse_corrs_per_dim.append(pse_corr_per_dim)
+
+        error_sp = np.array(pse_corrs_per_dim).mean(axis=0)
+        print("POWER SPECTRUM ERROR: {:}".format(error_sp))
 
         plotSpectrum(self, sp_true, sp_pred, freq_true, freq_pred, set_name)
         return rmnse_avg, num_accurate_pred_005_avg, num_accurate_pred_050_avg, error_freq, predictions_all, truths_all, freq_pred, freq_true, sp_true, sp_pred

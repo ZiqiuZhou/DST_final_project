@@ -2,7 +2,7 @@
 
 cd ../../../Methods
 
-for RDIM in 3
+for RDIM in 1
 do
 for SS in 100
 do
@@ -45,7 +45,9 @@ python3.7 RUN.py rnn_statefull \
 --num_test_ICS 2 \
 --reference_train_time 1 \
 --buffer_train_time 0.2 \
---retrain 0
+--retrain 0 \
+--smoothing_sigma 1 \
+--frequency_cutoff 5000 # in 1/length
 done
 done
 done
