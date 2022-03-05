@@ -1,27 +1,5 @@
-\documentclass{scrarticle}
+\section{Summary LSTM \cite{Vlachas}}
 
-\usepackage[utf8]{inputenc}
-\usepackage{xcolor}
-\usepackage{bm}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[outercaption]{sidecap}  
-\usepackage{caption}
-\usepackage{url}
-\usepackage{hyperref}
-
-\usepackage{biblatex}
-\addbibresource{references.bib}
-
-\title{DST - Final Project}
-\author{Ziqiu Zhou (\textbf{3635588}), Christoph Bender (\textbf{4012810})}
-
-
-\begin{document}
-	\maketitle
-	\clearpage
-	\section{Summary LSTM \cite{Vlachas}}
 	The invention of LSTM was motivated by the regularization of recurrent neural networks (RNNs). In addition to inputs $\bm{i}_t \in \mathbb{R}^{d_i}$, RNNs use also loops in order to include informations from previous hidden states $\bm{h}_{t'}$(where $t'<t$) in the calculation of the current state $\bm{h}_t \in \mathbb{R}^{d_h}$ at time $t$. The Elman network \cite{Elman} is for example defined by \footnote{see also \url{https://en.wikipedia.org/wiki/Recurrent_neural_network\#Elman_networks_and_Jordan_networks}}:
 	\begin{figure}[h]
 	\begin{minipage}[h][3cm][t]{7cm}
@@ -71,10 +49,3 @@
 	The group of Vlachas trained the LSTM by using backpropagation. For this, a mini-batch optimization with the Adam method \cite{Adam} and an initial learning rate $\epsilon_{init}=10^{-4})$ was applied. The inizialization of the weights is based on the method of Xavier. One problem the group had to face was to fine tune the dimension of the hidden stated $d_h$. They observed that a small $d_h$ shortened the ability to fit to the time series well, but a big $d_h$ increased the risk of overfitting and the computation time.
 	
 	In the paper they compared the LSTM Model with the GPR (Gaussian process regression) and MSM (Mean Stochastic Model). Three applications (The Lorenz 96 sytem, the Kuromoto-Sivashinsky equation an a barotropic climate model) were considered in order to evaluate the predictive accuracy of the models. They showed that in all cases the LSTM outperformed the other two models, i.e. the LSTM model was able to catpure the local dynamics more efficient.
-	\section{Results}
-	\textcolor{red}{What do you think about the idea to shortly present the results of task 3 here, i.e. saying the sigma and the cutoff frequency and maybe some training graphics ...}
-	\subsection{Lorenz63}
-	\subsection{Lorenz96}
-	
-	\printbibliography
-\end{document}

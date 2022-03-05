@@ -1,0 +1,15 @@
+\section{Power spectrum metric}
+
+The second task of the project was to implement the power-spectrum correlation (PSC). This features two hyperparameters: Namely
+\begin{itemize}
+	\item the smoothing factor $\sigma$, which is the width of the Gaussian kernel smoothing the spectrum
+	\item and the cutoff, which excludes all frequencies above the given frequency threshold from the calculation of the power spectrum correlation.
+\end{itemize}
+The code snippets of \textit{psc.py} was added in \textit{global\_utils.py} and executed in \textit{rnn\_statefull.py}. Furthermore the plotting functions are added in the \textit{plotting\_utils.py} file.
+In order to ensure that the model draws a random initial condition and then generates a time series of length T. We sampled random indices in the data generation and for each prediction the model takes one of these random integers during testing. And starts to predict the time series starting at the chosen starting point of the whole test series.
+
+To illustrate the LSTM model and also to make sure whether the LSTM model is working, we first apply the model on a very simple sinosoidal dataset before applying it on the Lorenz datasets (see \cref{sec3}). For this we generate a time series by computing:
+\begin{align}
+	f_t = A\cdot\sin(2\pi ft+\phi_0)+c
+\end{align}
+
