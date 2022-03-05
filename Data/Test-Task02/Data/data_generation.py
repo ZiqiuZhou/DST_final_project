@@ -19,6 +19,9 @@ c = 0.5 # Offset
 
 t = np.arange(0, N_data, dt)
 training_data = A*np.sin(2*np.pi*freq*t+phi0)+c
+# adding a dimension (get same shape as Lorenz-Datasets)
+training_data = training_data[:,None]
+# note this data will get a noise depending on the noise level used in the bash script:)
 
 # generate training data
 data_dict_train = {}
@@ -29,6 +32,8 @@ np.save('training_data_N{}.npy'.format(N_data), data_dict_train)
 
 
 testing_data = A*np.sin(2*np.pi*freq*t+phi0_test)+c
+# adding a dimension (get same shape as Lorenz-Datasets)
+testing_data = testing_data[:,None]
 
 # generate testing data
 data_dict_test = {}
