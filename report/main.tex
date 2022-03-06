@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage[outercaption]{sidecap}  
 \usepackage{caption}
+\usepackage{subcaption}
+\usepackage{placeins}
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{cleveref}
@@ -15,15 +17,20 @@
 \usepackage{biblatex}
 \addbibresource{references.bib}
 
-\title{DST - Final Project}
-\author{Ziqiu Zhou (\textbf{3635588}), Christoph Bender (\textbf{4012810})}
+\title{\Huge Dynamical Systems Theory in Machine Learning and	Data Science\\\huge - \\Final Project}
+\author{Ziqiu Zhou\footnote{matriculation number: \textbf{3635588}. \textcolor{red}{\textbf{grade?}}}\\\small \href{mailto:xy@somewhere.com}{\texttt{xy@somewhere.com}} \and  Christoph Bender\footnote{matriculation number: \textbf{4012810}. I do not want a grade (only a pass and the 6 CP) and also no grade before 9th of march.}\\\small \href{mailto:Christoph.Bender@stud.uni-heidelberg.de}{\texttt{Christoph.Bender@stud.uni-heidelberg.de}}}
+
 
 
 \begin{document}
 	\maketitle
+	
 	\clearpage
 	\input{summary_lstm}
+	\FloatBarrier
 	\input{ps-metric}
+	\FloatBarrier
 	\input{lorenz-testing}
+	\FloatBarrier
 	\printbibliography
 \end{document}
