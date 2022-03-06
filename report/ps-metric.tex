@@ -8,8 +8,17 @@ The second task of the project was to implement the power-spectrum correlation (
 The code snippets of \textit{psc.py} was added in \textit{global\_utils.py} and executed in \textit{rnn\_statefull.py}. Furthermore the plotting functions are added in the \textit{plotting\_utils.py} file.
 In order to ensure that the model draws a random initial condition and then generates a time series of length T. We sampled random indices in the data generation and for each prediction the model takes one of these random integers during testing. And starts to predict the time series starting at the chosen starting point of the whole test series.
 
-To illustrate the LSTM model and also to make sure whether the LSTM model is working, we first apply the model on a very simple sinosoidal dataset before applying it on the Lorenz datasets (see \cref{sec3}). For this we generate a time series by computing:
+To illustrate the LSTM model and also to make sure whether the LSTM model is working, we first apply the model on a very simple sinosoidal dataset before applying it on the Lorenz datasets (see \cref{sec3}). For this we generate a time series consisting of 100000 points with time step size $\Delta t=0.5$ by computing:
 \begin{align}
-	f_t = A\cdot\sin(2\pi ft+\phi_0)+c
+	z_t = A\cdot\sin(2\pi ft+\phi_0)+c
 \end{align}
+The chosen parameters are:
+\begin{itemize}
+	\setlength\itemsep{1em}
+	\item amplitude $A = 2$
+	\item frequency $f = 0.1$
+	\item phase $\phi_0^{\text{train}}=0$, $\phi_0^{\text{test}}=0.5$
+	\item offset $c=0.5$
+\end{itemize}
 
+In 
