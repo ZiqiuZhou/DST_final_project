@@ -2,11 +2,11 @@
 
 cd ../../../Methods
 
-for RDIM in 1
+for RDIM in 10
 do
-for SS in 100
+for SS in 200
 do
-for SL in 8
+for SL in 4
 do
 for KP in 1.0
 do
@@ -38,8 +38,8 @@ python3.7 RUN.py rnn_statefull \
 --max_epochs 100 \
 --num_rounds 5 \
 --overfitting_patience 20 \
---training_min_epochs 1 \
---learning_rate 0.001 \
+--training_min_epochs 5 \
+--learning_rate 0.0001 \
 --train_val_ratio 0.8 \
 --iterative_prediction_length 200 \
 --num_test_ICS 2 \
