@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.7)  6 MAR 2022 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.7)  8 MAR 2022 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -773,6 +773,8 @@ Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 25.
 Package biblatex Info: Reference segment=0 on input line 25.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -797,13 +799,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
  org / wiki / Recurrent _ neural _ network # Elman _ networks _ and _
  []
 
-<images/RNN_Vlachas_cropped.png, id=27, 2008.50375pt x 816.04875pt>
+<images/RNN_Vlachas_cropped.png, id=28, 2008.50375pt x 816.04875pt>
 File: images/RNN_Vlachas_cropped.png Graphic file (type png)
 <use images/RNN_Vlachas_cropped.png>
 Package pdftex.def Info: images/RNN_Vlachas_cropped.png  used on input line 15.
 
 (pdftex.def)             Requested size: 207.7052pt x 84.38641pt.
-<images/LSTM_Vlachas.jpg, id=30, 308.352pt x 130.8087pt>
+<images/LSTM_Vlachas.jpg, id=31, 308.352pt x 130.8087pt>
 File: images/LSTM_Vlachas.jpg Graphic file (type jpg)
 <use images/LSTM_Vlachas.jpg>
 Package pdftex.def Info: images/LSTM_Vlachas.jpg  used on input line 44.
@@ -814,7 +816,7 @@ Package pdftex.def Info: images/LSTM_Vlachas.jpg  used on input line 44.
 s.jpg>]
 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200
--NL_1-WID_0/Loss_total_log.png, id=85, 462.528pt x 346.896pt>
+-NL_1-WID_0/Loss_total_log.png, id=86, 462.528pt x 346.896pt>
 File: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/Loss_total_log.png Graphic file (type png)
@@ -827,7 +829,7 @@ ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/Loss_total_log.png  used on input line 28.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200
--NL_1-WID_0/spectrum_comparison_TEST.png, id=87, 462.528pt x 346.896pt>
+-NL_1-WID_0/spectrum_comparison_TEST.png, id=88, 462.528pt x 346.896pt>
 File: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/spectrum_comparison_TEST.png Graphic file (type png)
@@ -841,7 +843,7 @@ ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spectrum_comparison_TEST.png  used on input
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200
--NL_1-WID_0/prediction_augmend_TEST_70417.png, id=90, 462.528pt x 346.896pt>
+-NL_1-WID_0/prediction_augmend_TEST_70417.png, id=91, 462.528pt x 346.896pt>
 File: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_augmend_TEST_70417.png Graphic file (type png)
@@ -851,11 +853,11 @@ _200-NL_1-WID_0/prediction_augmend_TEST_70417.png>
 Package pdftex.def Info: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_
 50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-
 ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_70417.png  used on 
-input line 46.
+input line 47.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200
--NL_1-WID_0/prediction_TEST_70417_error.png, id=91, 462.528pt x 346.896pt>
+-NL_1-WID_0/prediction_TEST_70417_error.png, id=92, 462.528pt x 346.896pt>
 File: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_TEST_70417_error.png Graphic file (type png)
@@ -865,11 +867,11 @@ _200-NL_1-WID_0/prediction_TEST_70417_error.png>
 Package pdftex.def Info: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_
 50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-
 ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_70417_error.png  used on in
-put line 50.
+put line 51.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200
--NL_1-WID_0/prediction_augmend_TEST_98804.png, id=92, 462.528pt x 346.896pt>
+-NL_1-WID_0/prediction_augmend_TEST_98804.png, id=93, 462.528pt x 346.896pt>
 File: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_augmend_TEST_98804.png Graphic file (type png)
@@ -879,11 +881,11 @@ _200-NL_1-WID_0/prediction_augmend_TEST_98804.png>
 Package pdftex.def Info: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_
 50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-
 ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_98804.png  used on 
-input line 59.
+input line 60.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200
--NL_1-WID_0/prediction_TEST_98804_error.png, id=93, 462.528pt x 346.896pt>
+-NL_1-WID_0/prediction_TEST_98804_error.png, id=94, 462.528pt x 346.896pt>
 File: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_TEST_98804_error.png Graphic file (type png)
@@ -893,9 +895,9 @@ _200-NL_1-WID_0/prediction_TEST_98804_error.png>
 Package pdftex.def Info: ../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_
 50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-
 ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_98804_error.png  used on in
-put line 63.
+put line 64.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-)
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -906,11 +908,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 200-NL_1-WID_0/Loss_total_log.png> <../Results/Test-Task02/Figures/RNN-lstm-RDI
 M_1-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0
-01-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spectrum_comparison_TEST.png>]
-(./lorenz-testing.tex
+01-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spectrum_comparison_TEST.png>])
+(./lorenz-testing.tex [5 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used
+_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0
+-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_70417.png> <../Res
+ults/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY_100-AC
+T_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-W
+ID_0/prediction_TEST_70417_error.png> <../Results/Test-Task02/Figures/RNN-lstm-
+RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_
+0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_98804
+.png> <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SI
+ZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-I
+PL_200-NL_1-WID_0/prediction_TEST_98804_error.png>]
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/Loss_total_log.png, id=104, 462.528pt x 346.896pt>
+NL_1-WID_0/Loss_total_log.png, id=113, 462.528pt x 346.896pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/Loss_total_log.png Graphic file (type png)
@@ -919,11 +931,11 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 200-NL_1-WID_0/Loss_total_log.png>
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
-KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/Loss_total_log.png  used on input line 10.
+KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/Loss_total_log.png  used on input line 15.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/spectrum_comparison_TEST.png, id=105, 462.528pt x 346.896pt>
+NL_1-WID_0/spectrum_comparison_TEST.png, id=114, 462.528pt x 346.896pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/spectrum_comparison_TEST.png Graphic file (type png)
@@ -933,15 +945,11 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
 KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spectrum_comparison_TEST.png  used on input 
-line 15.
+line 20.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/prediction_augmend_TEST_33278.png, id=106, 462.528pt x 346.896pt>
+NL_1-WID_0/prediction_augmend_TEST_33278.png, id=118, 462.528pt x 346.896pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/prediction_augmend_TEST_33278.png Graphic file (type png)
@@ -951,11 +959,11 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
 KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_33278.png  used on i
-nput line 24.
+nput line 33.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/prediction_TEST_33278.png, id=107, 462.528pt x 346.896pt>
+NL_1-WID_0/prediction_TEST_33278.png, id=119, 462.528pt x 346.896pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/prediction_TEST_33278.png Graphic file (type png)
@@ -965,11 +973,11 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
 KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_33278.png  used on input lin
-e 32.
+e 41.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/prediction_TEST_33278_contour.png, id=108, 867.24pt x 433.62pt>
+NL_1-WID_0/prediction_TEST_33278_contour.png, id=120, 867.24pt x 433.62pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/prediction_TEST_33278_contour.png Graphic file (type png)
@@ -979,14 +987,15 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
 KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_33278_contour.png  used on i
-nput line 37.
+nput line 46.
 (pdftex.def)             Requested size: 418.25555pt x 209.1277pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/prediction_augmend_TEST_45336.png, id=109, 462.528pt x 346.896pt>
+NL_1-WID_0/prediction_augmend_TEST_45336.png, id=121, 462.528pt x 346.896pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/prediction_augmend_TEST_45336.png Graphic file (type png)
@@ -996,11 +1005,11 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
 KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_45336.png  used on i
-nput line 47.
+nput line 56.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/prediction_TEST_45336.png, id=110, 462.528pt x 346.896pt>
+NL_1-WID_0/prediction_TEST_45336.png, id=122, 462.528pt x 346.896pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/prediction_TEST_45336.png Graphic file (type png)
@@ -1010,11 +1019,11 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
 KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_45336.png  used on input lin
-e 55.
+e 64.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_1
 00-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-
-NL_1-WID_0/prediction_TEST_45336_contour.png, id=111, 867.24pt x 433.62pt>
+NL_1-WID_0/prediction_TEST_45336_contour.png, id=123, 867.24pt x 433.62pt>
 File: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-
 LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
 _200-NL_1-WID_0/prediction_TEST_45336_contour.png Graphic file (type png)
@@ -1024,191 +1033,181 @@ AY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
 Package pdftex.def Info: ../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50
 000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-Z
 KP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_45336_contour.png  used on i
-nput line 60.
+nput line 69.
 (pdftex.def)             Requested size: 418.25555pt x 209.1277pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-
-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
-200-NL_1-WID_0/prediction_augmend_TEST_70417.png> <../Results/Test-Task02/Figur
-es/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-S
-L_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_7
-0417_error.png> <../Results/Test-Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NU
-M-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-
-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_98804.png> <../Results/Test
--Task02/Figures/RNN-lstm-RDIM_1-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-IS
-H_statefull-SL_8-PL_4-LR_0.001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/pred
-iction_TEST_98804_error.png>] [6 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-
-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-
-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/Loss_total_log.png> <../Results/Lor
-enz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH
-_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spec
-trum_comparison_TEST.png> <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_
-50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0
--ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_33278.png> <../Res
-ults/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_
-tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WI
-D_0/prediction_TEST_33278.png> <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_
-used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DK
-P_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_33278_contour.png>]
+[6 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LA
+Y_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_2
+00-NL_1-WID_0/Loss_total_log.png> <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3
+-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001
+-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spectrum_comparison_TEST.png>]
 [7 <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LA
 Y_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_2
-00-NL_1-WID_0/prediction_augmend_TEST_45336.png> <../Results/Lorenz-63/Figures/
+00-NL_1-WID_0/prediction_augmend_TEST_33278.png> <../Results/Lorenz-63/Figures/
 RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8
--PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_453
-36.png> <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SI
+-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_332
+78.png> <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SI
 ZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-
-IPL_200-NL_1-WID_0/prediction_TEST_45336_contour.png>]
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+IPL_200-NL_1-WID_0/prediction_TEST_33278_contour.png>] [8 <../Results/Lorenz-63
+/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_state
+full-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction
+_augmend_TEST_45336.png> <../Results/Lorenz-63/Figures/RNN-lstm-RDIM_3-N_used_5
+0000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-
+ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_45336.png> <../Results/Lore
+nz-63/Figures/RNN-lstm-RDIM_3-N_used_50000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_
+statefull-SL_8-PL_4-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/predi
+ction_TEST_45336_contour.png>]
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/Loss_total_log.png, id=141, 462.528pt x 346.896pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/Loss_total_log.png, id=149, 462.528pt x 346.896pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/Loss_total_log.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/Loss_total_log.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
--ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/Loss_total_log.png  used on input line 76.
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/Loss_total_log.png  used on input line 85.
 
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/spectrum_comparison_TEST.png, id=142, 462.528pt x 346.896pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/spectrum_comparison_TEST.png, id=150, 462.528pt x 346.896pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/spectrum_comparison_TEST.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/spectrum_comparison_TEST.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
 -ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spectrum_comparison_TEST.png  used on inpu
-t line 81.
+t line 90.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/prediction_augmend_TEST_25172.png, id=143, 462.528pt x 346.896pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/prediction_augmend_TEST_25172.png, id=152, 462.528pt x 346.896pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/prediction_augmend_TEST_25172.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_augmend_TEST_25172.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
 -ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_25172.png  used on
- input line 90.
+ input line 102.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/prediction_TEST_25172_error.png, id=144, 462.528pt x 346.896pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/prediction_TEST_25172_error.png, id=153, 462.528pt x 346.896pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/prediction_TEST_25172_error.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_TEST_25172_error.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
 -ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_25172_error.png  used on i
-nput line 94.
+nput line 106.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/prediction_TEST_25172_contour.png, id=145, 867.24pt x 433.62pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/prediction_TEST_25172_contour.png, id=154, 867.24pt x 433.62pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/prediction_TEST_25172_contour.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_TEST_25172_contour.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
 -ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_25172_contour.png  used on
- input line 99.
+ input line 111.
 (pdftex.def)             Requested size: 418.25555pt x 209.1277pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/prediction_augmend_TEST_50168.png, id=146, 462.528pt x 346.896pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/prediction_augmend_TEST_50168.png, id=155, 462.528pt x 346.896pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/prediction_augmend_TEST_50168.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_augmend_TEST_50168.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
 -ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_augmend_TEST_50168.png  used on
- input line 108.
+ input line 121.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/prediction_TEST_50168_error.png, id=147, 462.528pt x 346.896pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/prediction_TEST_50168_error.png, id=156, 462.528pt x 346.896pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/prediction_TEST_50168_error.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_TEST_50168_error.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
 -ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_50168_error.png  used on i
-nput line 112.
+nput line 125.
 (pdftex.def)             Requested size: 188.21371pt x 141.15904pt.
-<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY
+<../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY
 _100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_20
-0-NL_1-WID_0/prediction_TEST_50168_contour.png, id=148, 867.24pt x 433.62pt>
-File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZ
+0-NL_1-WID_0/prediction_TEST_50168_contour.png, id=157, 867.24pt x 433.62pt>
+File: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZ
 E-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-I
 PL_200-NL_1-WID_0/prediction_TEST_50168_contour.png Graphic file (type png)
-<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE
+<use ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE
 -LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IP
 L_200-NL_1-WID_0/prediction_TEST_50168_contour.png>
 Package pdftex.def Info: ../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_1
-00000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
+00000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0
 -ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_50168_contour.png  used on
- input line 116.
+ input line 129.
 (pdftex.def)             Requested size: 418.25555pt x 209.1277pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [8
+) [9
 
- <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LA
+ <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LA
 Y_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_2
 00-NL_1-WID_0/Loss_total_log.png> <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_1
-0-N_used_100000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.00
+0-N_used_100000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.00
 01-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/spectrum_comparison_TEST.png>] [
-9 <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-L
-AY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_
-200-NL_1-WID_0/prediction_augmend_TEST_25172.png> <../Results/Lorenz-96/Figures
-/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-S
-L_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_
-25172_error.png> <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-N
-UM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.
-0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_25172_contour.png>] [10 <../Resul
-ts/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY_100-ACT_
-tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WI
-D_0/prediction_augmend_TEST_50168.png> <../Results/Lorenz-96/Figures/RNN-lstm-R
-DIM_10-N_used_100000-NUM-LAY_1-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR
-_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_50168_error
-.png> <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_1-SI
-ZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-
-IPL_200-NL_1-WID_0/prediction_TEST_50168_contour.png>]
+10 <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-
+LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL
+_200-NL_1-WID_0/prediction_augmend_TEST_25172.png> <../Results/Lorenz-96/Figure
+s/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-
+SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST
+_25172_error.png> <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-
+NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1
+.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_25172_contour.png>] [11 <../Resu
+lts/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY_100-ACT
+_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-W
+ID_0/prediction_augmend_TEST_50168.png> <../Results/Lorenz-96/Figures/RNN-lstm-
+RDIM_10-N_used_100000-NUM-LAY_3-SIZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-L
+R_0.0001-DKP_1.0-ZKP_1.0-HSPL_300-IPL_200-NL_1-WID_0/prediction_TEST_50168_erro
+r.png> <../Results/Lorenz-96/Figures/RNN-lstm-RDIM_10-N_used_100000-NUM-LAY_3-S
+IZE-LAY_100-ACT_tanh-ISH_statefull-SL_8-PL_2-LR_0.0001-DKP_1.0-ZKP_1.0-HSPL_300
+-IPL_200-NL_1-WID_0/prediction_TEST_50168_contour.png>]
 Overfull \hbox (2.32982pt too wide) in paragraph at lines 36--36
 \OT1/cmr/m/sc/10.95 url\OT1/cmr/m/n/10.95 : []$\OT1/cmtt/m/n/10.95 https : / / 
 onlinelibrary . wiley . com / doi / abs / 10 . 1207 / s15516709cog1402 _
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-[11
+[12
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
@@ -1223,10 +1222,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
- 19926 strings out of 481239
- 384916 string characters out of 5920377
- 1109307 words of memory out of 5000000
- 34868 multiletter control sequences out of 15000+600000
+ 19928 strings out of 481239
+ 384942 string characters out of 5920377
+ 1109429 words of memory out of 5000000
+ 34869 multiletter control sequences out of 15000+600000
  553084 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,18n,74p,10109b,1609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1258,10 +1257,10 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/typ
 e1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
 frm1095.pfb>
-Output written on main.pdf (11 pages, 2253003 bytes).
+Output written on main.pdf (12 pages, 2264714 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
