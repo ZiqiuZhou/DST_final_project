@@ -11,9 +11,10 @@ The code is based on the repository: https://github.com/pvlachas/RNN-RC-Chaos. P
 
 1. Task 1 already finished (but could also be made more detailed...)
 2. generated notebook (GettingFamiliarWithData.ipynb) to understand test and training data shape and data itself of lorenz data
-3. In order to test whether task 2 is finished/works, a sinosoidal time series (test and train) data was generated in /Data/Test-Task02
-	- i started to write something about task 02
+3. In order to test whether task 2 is finished/works, a sinosoidal time series (test and train) data was generated in /Data/Test-Task02 + brief explaination in report
 4. I tried several hyperparameters for training lorenz-63 and lorenz-96:
 	- found an acceptable lorenz-63 training using all dimensions and a smaller learning rate (published it)
 	- for lorenz-96 dataset using all dimensions is good and also smaller learning rate (one magnitude lower), but the results are still only "meh"
+	- also tried to implement a learning rate scheduler
+5. Wrote some observations for task 03
 
